@@ -28,15 +28,30 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
-1. Describe the biggest difference between `.forEach` & `.map`.
+1. Describe the biggest difference between `.forEach` & `.map`. 
+
+forEach loops through and array and map returns an array
 
 2. What is the difference between a function and a method?
 
+methods are functions the only difference is that they are applied to objects
+
 3. What is closure?
+
+closure is when a nested function pulls in references from outside of its function scope
+can go up as far into the global scope but never go into functions nested within its own function block
 
 4. Describe the four rules of the 'this' keyword.
 
+global - refers to the window/console
+implicit - refers to the object to the left of the dot to get context
+explicit - refers to .call or .apply methods being used on a function to tell the function where to get context
+new - refers to the specific instance of an object being created by a constructor function or class for context
+
 5. Why do we need super() in an extended class?
+
+extend is to add the __proto__ to show the inheritance chain
+super adds attributes and methods
 
 ## Project Set up
 
