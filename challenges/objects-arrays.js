@@ -97,7 +97,7 @@ Log the result of your new array. */
 const contactInfo = [];
 function contact(arr){
   for (let i = 0; i < arr.length; i++ ){ 
-  contactInfo.push(arr[i].first_name, arr[i].email)
+  contactInfo.push(`${arr[i].first_name} ${arr[i].email}`)
   
 }
 
@@ -107,11 +107,21 @@ contact(graduates);
 console.log(contactInfo);
 
 
-/* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called uni that contains them all. Log the result. */
+/* Request 3: Find out how many universities have the string "Uni" included in their name. 
+Create a new array called uni that contains them all. Log the result. */
+
 const uni = [];
+const arr1 = [];
+function uniFilter(){
+for (let i = 0; i < graduates.length; i++){
+  arr1.push(graduates[i].university)
+}
+return arr1;
+}
+uniFilter();
 
-console.log(uni);
-
+console.log(arr1);
+console.log(uni)
 
 // ==== ADVANCED Array Methods ====
 
