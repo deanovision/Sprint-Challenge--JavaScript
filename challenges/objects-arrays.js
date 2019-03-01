@@ -111,17 +111,17 @@ console.log(contactInfo);
 Create a new array called uni that contains them all. Log the result. */
 
 const uni = [];
-const arr1 = [];
-function uniFilter(){
-for (let i = 0; i < graduates.length; i++){
-  arr1.push(graduates[i].university)
+function uniFilter(arr){
+for (let i = 0; i < arr.length; i++){
+  if((arr[i].university.includes("Uni")))
+  uni.push(arr[i].university);
 }
-return arr1;
+return uni;
 }
-uniFilter();
 
-console.log(arr1);
-console.log(uni)
+uniFilter(graduates);
+
+console.log(uni);
 
 // ==== ADVANCED Array Methods ====
 
